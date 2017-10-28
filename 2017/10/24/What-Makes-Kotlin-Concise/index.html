@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://jlcarveth.github.io/2017/10/24/What-Makes-Kotlin-Concise/index.html">
 <meta property="og:site_name" content="JLCarveth">
 <meta property="og:description" content="When I first started reading about Kotlin, I found many people praising Kotlin for being a concise language. This had me interested. I began reading the article, only to have them gloss over Kotlin’s">
-<meta property="og:updated_time" content="2017-10-24T21:40:13.257Z">
+<meta property="og:updated_time" content="2017-10-28T19:48:30.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="What Makes Kotlin Concise?">
 <meta name="twitter:description" content="When I first started reading about Kotlin, I found many people praising Kotlin for being a concise language. This had me interested. I began reading the article, only to have them gloss over Kotlin’s">
@@ -96,7 +96,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Classes"><span class="toc-number">1.</span> <span class="toc-text">Data Classes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Extension-Functions"><span class="toc-number">2.</span> <span class="toc-text">Extension Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Range-Expressions"><span class="toc-number">3.</span> <span class="toc-text">Range Expressions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Classes"><span class="toc-number">1.</span> <span class="toc-text">Data Classes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Extension-Functions"><span class="toc-number">2.</span> <span class="toc-text">Extension Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Range-Expressions"><span class="toc-number">3.</span> <span class="toc-text">Range Expressions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Extra-Reading"><span class="toc-number">4.1.</span> <span class="toc-text">Extra Reading:</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -158,6 +158,13 @@
 <p>The above loops are (in my opinion) far easier to read that traditional Java for loops. There’s no longer any need to declare <code>int i=...</code>, and the range the function covers is evident immediately. To me, Kotlin’s for loops are a perfect combination syntactically of Java and Python’s for loops.   </p>
 <p>While these ranges might not reduce the lines of code in a program, they will help make code easier to read and understand at a quick glance, which helps make bugs easier to spot. </p>
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>While these aren’t the only Kotlin features that will clean up and shorten your code, they are some of the more effective methods. There are more ways to shorten your Kotlin code, especially if the context is an Android application, as there is a whole Kotlin library for eliminating some of Android’s boilerplate. However, if you’re simply writing a Kotlin program, these features should help keep your program concise.</p>
+<p>Check out the code below for yourself. The Kotlin example sits at roughly 50 lines, where the Java equivalent has 100. Thanks to Kotlin’s data classes, we can omit many functions from our code, which would need to be explicitly implemented in Java.</p>
+<h3 id="Extra-Reading"><a href="#Extra-Reading" class="headerlink" title="Extra Reading:"></a>Extra Reading:</h3><ul>
+<li><a href="https://github.com/JLCarveth/CodeForBlog/tree/master/2017-10-24" target="_blank" rel="external">SOURCE CODE</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/extensions.html" target="_blank" rel="external">Kotlin Extensions</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/data-classes.html" target="_blank" rel="external">Data Classes</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/ranges.html" target="_blank" rel="external">Ranges</a></li>
+</ul>
 
   </div>
 </article>
@@ -184,7 +191,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Classes"><span class="toc-number">1.</span> <span class="toc-text">Data Classes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Extension-Functions"><span class="toc-number">2.</span> <span class="toc-text">Extension Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Range-Expressions"><span class="toc-number">3.</span> <span class="toc-text">Range Expressions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Data-Classes"><span class="toc-number">1.</span> <span class="toc-text">Data Classes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Extension-Functions"><span class="toc-number">2.</span> <span class="toc-text">Extension Functions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Range-Expressions"><span class="toc-number">3.</span> <span class="toc-text">Range Expressions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Extra-Reading"><span class="toc-number">4.1.</span> <span class="toc-text">Extra Reading:</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
