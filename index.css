@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: rgb(209, 209, 209);
+    margin: 0px;
+}
+
+.content {
+    grid-area: content;
+    color: #666;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: linear-gradient(
+        to right,
+        #231651,
+        #2374AB,
+        #4DCCBD);
+}
+
+.footer {
+    grid-area: footer;
+    color: #666;
+    text-decoration-style: itali
+}
+.content,.sidebar,.footer {
+    padding: 1em;
+}
+.container {
+    font-size: 1.5em;
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-template-areas:
+        "sidebar"
+        "content"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 800px 250px
+}
+
+nav ul {
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav li {
+    list-style:none;
+    padding: 1em 0;
+}
+
+nav li a {
+    color: white;
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;   
+}
+
+nav li a.active {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+nav li a:hover {
+    opacity: 1;
+}
+
+.hero {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero img {
+    width: 200px;
+    padding: 10px;
+}
+
+.hero h1 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #373d46;
+}
+
+.hero p {
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+.hire-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 700;
+    background: #231651;
+    padding: .5em 2em;
+    border-radius: 40px;
+    margin: 1em 0;
+    transition: 0.3s;
+}
+
+.hire-btn:hover {
+    box-shadow: 0 5px 10px rgba(58, 58, 58, 50);
+}
+
+@media (min-width: 1040px) {
+    .container {
+        grid-template-areas:
+            "sidebar content"
+            "sidebar footer";
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr auto;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .sidebar {
+        background: linear-gradient(
+            to top,
+            #231651,
+            #2374AB,
+            #4DCCBD);
+        padding-top: 3em;
+    }
+    .hero {
+        text-align: left;
+        margin: 2em auto;
+    }
+    .hero img {
+        width: 250px;
+        float: right;
+    }
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        width: 60%;
+    }
+
+    footer ul {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+}
