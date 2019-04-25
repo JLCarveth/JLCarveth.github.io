@@ -4,6 +4,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background: rgb(209, 209, 209);
     margin: 0px;
+    height:100%;
 }
 
 .content {
@@ -23,7 +24,7 @@ body {
 .footer {
     grid-area: footer;
     color: #666;
-    text-decoration-style: itali
+    padding: 1em 0;
 }
 .content,.sidebar,.footer {
     padding: 1em;
@@ -51,7 +52,7 @@ nav ul {
 
 nav li {
     list-style:none;
-    padding: 1em 0;
+    padding: 1em 1em;
 }
 
 nav li a {
@@ -109,7 +110,7 @@ nav li a:hover {
     box-shadow: 0 5px 10px rgba(58, 58, 58, 50);
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 960px) {
     .container {
         grid-template-areas:
             "sidebar content"
