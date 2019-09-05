@@ -306,11 +306,11 @@ body.page-template-page-fullsingle-split p {
 }
 .split-bio ul {
   margin-left: 2.25em;
-  list-style-type: disc;
+  list-style-type: none;
 }
 .split-bio ol {
   margin-left: 2.25em;
-  list-style-type: decimal;
+  list-style-type: none;
 }
 .split-bio ul ul, .split-bio ol ul, .split-bio ul ol, .split-bio ol ol {
   margin-left: 1.25em;
