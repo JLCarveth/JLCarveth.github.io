@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>CST8238 - Lab 1</title>
+    <!--Bootstrap CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">CST8238</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="https://johncarveth.com">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="lab1/index.html">Lab 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lab2/index.html">Lab 2</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <h1>Basics of Web Technology</h1>
+    <ul>
+        <li>Why do we need a <b><i>Uniform Resource Locator</i> (URL)</b>?</li>
+        <ul>
+            <li>A url is used to point to a specific resource on a web server. </li>
+            <li>ex. <code>https://github.com/jlcarveth/web.git</code></li>
+        </ul>
+        <li>A URL is made up of the following parts:</li>
+        <ul>
+            <li>A protocol (<code>https://, ftp://</code>)</li>
+            <li>A hostname (<code>github.com</code>)</li>
+            <li>A path (<code>/jlcarveth/web.git</code>)</li>
+        </ul>
+        <li>What is the difference between a static and dynamic web site?</li>
+        <ul>
+            <li>A <b>static</b> web site consists of raw HTML files which are not altered when delivered to the user. All visitors of the site will see the same content.</li>
+            <li>A <b>dynamic</b> web site displays content based on application state, user contents stored in cookies or LocalStorage, URL parameters, or many other factors. Dynamic webpages can display different content based on who is accessing the website. Such a web site could be as simple as an HTML file with Javascript to manipulate the DOM, or could consist of a web server rendering and delivering custom HTML and CSS to each individual user.</li>
+        </ul>
+        <li>What is DNS and Why do we need it?</li>
+        <ul>
+            <li>The <b>Domain Name System</b> is essentially an phone book for the internet. Similarily to a phone book, a DNS record has a name (domain name) and a phone number (ip address) which is used to contact the 'person'.</li>
+            <li>We use the DNS as it is far easier to remember a domain name (google.com) than an IP address (<code>172.217.0.238</code>)</li>
+            <li>DNS resolution is the process of contacting a DNS server which will return the desired IP address.</li>
+            <li>Some top-level domains (<b>TLD</b>s) include:</li>
+            <ul>
+                <li>Generic TLDs:</li>
+                <ul>
+                    <li>.com</li>
+                    <li>.gov</li>
+                    <li>.org</li>
+                    <li>.edu</li>
+                </ul>
+                <li>Country-code TLDs:</li>
+                <ul>
+                    <li>.ca</li>
+                    <li>.tv</li>
+                    <li>.ru</li>
+                </ul>
+            </ul>
+        </ul>
+        <li>What is the purpose of the HTTP protocol?</li>
+        <ul><li>The purpose of the HTTP protocol is to standardize the fetching of documents on the web. It defines requests (GET, POST, PUT, PATCH, DELETE) to modify and retrieve documents, and standardizes responses web servers should provide.</li></ul>
+        <li>Define a web server:</li>
+        <ul><li>A web server hosts content for one or more websites, and is responsible for responding to requests and serving content accordingly.</li></ul>
+    </ul>
+</body>
+</html>
