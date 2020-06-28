@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Lab 4 - CSS and Multimedia</title>
+    <title>Lab 5 - Introduction to PHP</title>
     <link rel="stylesheet" href="./style.css">
     <!--GoogleFonts because TNR has no place in web design-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Source+Sans+Pro&display=swap"
