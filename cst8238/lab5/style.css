@@ -1,0 +1,58 @@
+body { background-color:#30475e; }
+.content {
+    background-color:#30475e;
+    color: #ececec;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Oswald', sans-serif;
+    color: #f2a365;
+}
+
+p code, li code {
+    color: #f2a365;
+}
+
+.content h3 {padding-left: 1rem;}
+.content p {padding-left: 2.5rem;}
+.content ul {padding-left:2.5rem;}
+
+nav.navbar {
+    background-color: #222831;
+}
+.navbar-brand {
+    color: #f2f2f2;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.nav-item a:hover {
+    background-color: #44475a;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.nav-item.dropdown .dropdown-item {
+    color: #000;
+}
+
+footer {
+    position: fixed;
+    left:0;
+    bottom: 0;
+    padding: .5rem;
+    width: 100%;
+    background-color: #222831;
+    color: #f2f2f2;
+}
+
+.content {
+    width: 100%;
+    padding: 2rem;
+}
+
+.navbar form {
+    padding: 0.25rem;
+    margin: 0px;
+}
