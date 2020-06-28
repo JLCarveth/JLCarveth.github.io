@@ -28,22 +28,27 @@ include 'resources.php';
 <!-- Content -->
 <div class="content">
     <h1>Lab 5 - An Introduction to PHP</h1>
-    <?php echo ('<h3>Hello World!</h3>');?>
+    <?php echo('<h3>Hello World!</h3>');?>
+    <?php echo($FNAME . ' ' . $MNAME . ' ' . $LNAME); ?>
+    <br>
+    <?php echo('Student#: ' . $STUDENT_ID);?>
     <p>
         This is <i>not</i> my first using PHP! It was actually the first programming language I had learned 
         in a classroom setting, in Grade 10 in secondary school. My most recent experience using PHP has been 
         through <a href="https://laravel.com">Laravel</a>, a PHP web framework. 
     <p>
-    <?php
-        foreach ($projects as $project) {
-           displayCard($project["name"], $project["url"], $project["desc"]);
-        }
-    ?>
+    <div align="center">
+        <?php
+            foreach ($projects as $project) {
+            displayCard($project["name"], $project["url"], $project["desc"]);
+            }
+        ?>
+    </div>
 </div>
 <!-- Footer -->
 <?php
     include 'footer.php';
-
+    // Displays information in a styled css card
     function displayCard ($name, $url, $desc) {
         echo('<div class="card bordered dark">');
         echo('<div class="info">');
