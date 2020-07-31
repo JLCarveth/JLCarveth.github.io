@@ -1,7 +1,7 @@
 <!-- Content -->
 <h3>Create an Account</h3>
 
-<form action="index.php" method="POST">
+<form action="/cst8238/lab9/index.php" method="POST">
     <div class="form-group">
         <label for="fName">First Name: </label>
         <input class="form-control" type="text" id="fName" name="fName" placeholder="John"><br>

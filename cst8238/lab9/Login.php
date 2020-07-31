@@ -2,7 +2,7 @@
 <h3>Login</h3>
 <?php if (!isset($_SESSION['email'])) { 
 ?>
-<form action="index.php" method="POST">
+<form action="/cst8238/lab9/index.php" method="POST">
     <div clas="form-group">
         <label for="email">Email: </label>
         <input class="form-control" type="email" id="email" name="email" placeholder="jDoe@gmail.com"><br>
