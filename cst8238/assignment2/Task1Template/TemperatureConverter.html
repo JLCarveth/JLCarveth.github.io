@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<style>
+#panel, #flip {
+    padding: 5x;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Task1 of Assignment2</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+/* Sub-task1:
+Create a function that converts the inputted temperature from 
+Celsius to Fahrenheit and vice versa: converttemperature.
+The function should first display a prompt asking the user to select the temperature unit 
+to convert to Celsius/Fahrenheit.
+Then the function should display another prompt asking the user to input the temperature to be converted to 
+Celsius/Fahrenheit.
+The value entered should be validated to ensure it is a number.
+Then, the appropriate formula should be applied to the value to convert the
+temperature to the selected temperature unit. 
+Finally, an alert should be displayed indicating the
+temperature that they entered, and the converted temperature.
+The function should be called when the appropriate button(i.e., Convert)  is pressed.
+*/
+
+/* Sub-task2:
+Write jQuery code to implement the following:	
+If you perform a single click of your mouse on the "<flip>" element, it will show (slide down) the "panel" element.
+If you perform a double click of your mouse on the "<flip>" element, it will remove (slide up) the "panel" element.	
+
+Hints:	
+	The jQuery slideUp() method is used to slide up an element.
+	Syntax: $(selector).slideUp();
+	
+	The jQuery slideDown() method is used to slide down an element.
+	Syntax:	$(selector).slideDown();
+	
+*/
+$(document).ready(() => {
+    $('#panel').slideUp();
+    let shown = false;
+    $('#flip').click(() => {
+        shown = !shown;
+        shown ? $('#panel').slideUp() : $('#panel').slideDown();
+    });
+
+    $('#btnConvert').click(convertTemperature);
+});
+
+function convertTemperature () {
+    var valid = false;
+    var unitOfConversion;
+    var temperature;
+    while (!valid) {
+        unitOfConversion = prompt("Please enter (1) for celcius, or (2) for farenheight");
+        console.log(unitOfConversion)
+        // if user hit cancel, exit early
+        if (unitOfConversion == null) return;
+        if (unitOfConversion == 1 || unitOfConversion == 2) {
+            valid = true;
+        } else alert("Invalid value");
+    }
+
+    unitOfConversion = (unitOfConversion == 1) ? "C" : "F";
+    valid = false;
+    while (!valid) {
+        temperature = prompt("Please enter a temperature to be converted to "  + (unitOfConversion == "C" ? "Celcius" : "Farenheit"));
+        if (temperature == null) return;
+        if (temperature == parseInt(temperature)) {
+            valid = true;
+        } else alert("That is not a valid integer");
+    }
+    var converted, message;
+    switch(unitOfConversion) {
+        case "C":
+            converted = farenheitToCelcius(temperature);
+            message = `${temperature} °F equals ${converted} °C`;
+            break;
+        case "F" :
+            converted = celciusToFarenheit(temperature);
+            message = `${temperature} °C equals ${converted} °F`;
+            break;
+    }
+    alert(message); 
+}
+
+function farenheitToCelcius (n) {
+    return (n - 32) * (5/9);
+}
+
+function celciusToFarenheit (n) {
+    return n * (9/5) + 32;
+}
+
+</script>
+</head>
+	
+
+<body>
+<h3>Task1 of Assignment2- Temperature Conversion</h3>
+    <div id="flip">Temperature Conversion</div>
+    <div id="panel">This program converts from Celsius to Fahrenheit and vice versa</div>
+    
+    <table>
+        	<tr>
+			    <td><input  name="btnConvert" id="btnConvert" value="Convert!" type="button"></td>
+		    </tr>
+   </table>
+</body>
+</html>
