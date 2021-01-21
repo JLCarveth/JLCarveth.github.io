@@ -1,0 +1,72 @@
+/*
+Author: John L. Carveth <jlcarveth@gmail.com>
+Date:   2021-01-16
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Share+Tech+Mono&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+body {
+    background-color: #011627;
+    color: #FDFFFC;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+a, a:hover {
+    color: #FF9F1C;
+}
+
+h1, h2, h3, h4, h5, legend {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    color: #FDFFFC;
+}
+
+h1.title {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  grid-template-rows: 0.01fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main";
+}
+/* Phone Portrait */
+@media (max-width: 414px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.4fr 1.6fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header header"
+            "sidebar sidebar"
+            "main main"
+            "main main"
+            "main main";
+    }
+}
+
+.header { 
+    grid-area: header;
+    max-height: fit-content;
+}
+
+.sidebar { grid-area: sidebar; }
+
+.main { 
+    grid-area: main;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.hidden {
+    display: none;
+}
