@@ -70,3 +70,8 @@ h1.title {
 .hidden {
     display: none;
 }
+
+.card {
+    background-color: #022441;
+    color: #FDFFFC;
+}
