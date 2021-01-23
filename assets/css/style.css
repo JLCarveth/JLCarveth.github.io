@@ -50,7 +50,7 @@ li.list-group-item {
     "sidebar main";
 }
 /* Phone Portrait */
-@media (max-width: 414px) {
+@media (max-width: 630px) {
     .grid-container {
         display: grid;
         grid-template-columns: 0.4fr 1.6fr;
