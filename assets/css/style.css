@@ -14,6 +14,12 @@ body {
 
 a, a:hover {
     color: #FF9F1C;
+    text-decoration: none;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: contents;
 }
 
 h1, h2, h3, h4, h5, legend {
@@ -24,6 +30,11 @@ h1, h2, h3, h4, h5, legend {
 
 h1.title {
     font-family: 'Share Tech Mono', monospace;
+}
+
+li.list-group-item {
+    background-color: #011627;
+    border: none;
 }
 
 .grid-container {
@@ -63,7 +74,7 @@ h1.title {
 
 .main { 
     grid-area: main;
-    margin-right: 15px;
+    margin-right: 25px;
     padding: 15px;
 }
 
