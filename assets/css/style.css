@@ -54,7 +54,7 @@ li.list-group-item {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.01fr 0.01fr 1fr 1fr 1fr;
         gap: 0px 0px;
         grid-template-areas:
             "header"
