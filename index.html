@@ -13,7 +13,7 @@
     <!-- FontAwesome Import-->
     <script src="https://kit.fontawesome.com/6d487e4a51.js" crossorigin="anonymous"></script>
     <!-- Glidejs CSS -->
-    <link rel="stylesheet" href="assets/css/glide.core.min.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/glide.core.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/glide.theme.min.css" type="text/css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
@@ -99,8 +99,17 @@
                     </div>
                 </div>
             </div>
+            <p>
+                Some of my spare time is spent making <a href="https://github.com/eveseat/web/pull/430">contributions to
+                    open source software</a>
+                used by tens of thousands of people. When I am not writing clean code, I am making <a href="assets/images/pizza.jpg"
+                    data-bs-toggle="popover" data-bs-trigger="hover"
+                    data-img="assets/images/pizza.jpg">homemade pizza</a>!
+            </p>
         </div>
     </div>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- Import the Bootstrap JS libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -118,6 +127,17 @@
                 }
             }
         }).mount()
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl, {
+                content: function () { 
+                    return '<div class="row"><img src="assets/images/pizza.jpg" width="300px"></div>';
+                },
+                trigger: 'hover',
+                html: true,
+                placement: 'left'
+            })
+        })
     </script>
 </body>
 

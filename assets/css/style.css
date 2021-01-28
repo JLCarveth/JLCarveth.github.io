@@ -64,9 +64,14 @@ li.list-group-item {
     display: none;
 }
 
-.card {
+.card, .popover {
     background-color: #022441;
     color: #FDFFFC;
+}
+
+
+.popover img {
+    border-radius: 5px;
 }
 
 /* Phone Portrait */
