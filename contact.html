@@ -74,6 +74,14 @@
                             <textarea class="form-control" id="messageInput" name="messageInput"></textarea>
                         </div>
                     </div>
+                    
+                    <!-- Why do people have to be awful stinky spammers? -->
+                    <div class="form-group">
+                        <div class="col">
+                            <input id="botBuster" name="botBuster" type="text" placeholder="Leave this blank if you see it and believe you're a human :)" class="form-control input-md"
+                                required="">
+                        </div>
+                    </div>
 
                     <!-- Button -->
                     <div class="form-group">
@@ -92,6 +100,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <script>
+        const buster = document.getElementById("botBuster");
+        buster.parentElement.removeChild(buster);
+    </script>
 </body>
 
 </html>
