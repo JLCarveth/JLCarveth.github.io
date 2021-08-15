@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>JLCarveth</title>
+    <title>JLCarveth.dev</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -17,7 +17,6 @@
 </head>
 
 <body class="is-preload">
-
     <!-- Page Wrapper -->
     <div id="page-wrapper">
 
@@ -35,8 +34,6 @@
                 <h2>Menu</h2>
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="generic.html">Generic</a></li>
-                    <li><a href="elements.html">Elements</a></li>
                     <li><a href="#">Log In</a></li>
                     <li><a href="#">Sign Up</a></li>
                 </ul>
@@ -55,6 +52,17 @@
 
         <!-- Wrapper -->
         <section id="wrapper">
+            <section id="one" class="wrapper spotlight style1">
+                <div class="inner">
+                    <div class="content">
+                        <h3 class="major">About Me</h3>
+                        <p>I have had a passion for computers and specifically programming from a young age. Some of my
+                            first programming experience included making mods for Minecraft in early 2012. From there, I
+                            learned the LAMP stack (Linux, Apache, MySQL, PHP), Java, and any other framework or
+                            language I discovered along the way.</p>
+                    </div>
+                </div>
+            </section>
             <!-- Projects Section -->
             <section id="four" class="wrapper alt style1">
                 <div class="inner">
@@ -78,18 +86,20 @@
                             <a href="https://npmjs.com/package/deeper-merge" class="special">See this project on NPM</a>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-                            <h3 class="major">Ante fermentum</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
-                                ultrices.</p>
-                            <a href="#" class="special">Learn more</a>
+                            <a href="#" class="image"><img src="images/blogRefactor.png" alt="" /></a>
+                            <h3 class="major">node-blog</h3>
+                            <p>A node.js application using ExpressJS and EJS to provide a working blogging backend with
+                                support for server-side rendering.</p>
+                            <a href="https://github.com/JLCarveth/nodeblog" class="special">Learn more</a>
                         </article>
                         <article>
-                            <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-                            <h3 class="major">Fusce consequat</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
-                                ultrices.</p>
-                            <a href="#" class="special">Learn more</a>
+                            <a href="#" class="image"><img src="images/meta.png" alt="" /></a>
+                            <h3 class="major">This website</h3>
+                            <p>This project consists of both a frontend and a simple Node.js backend all hosted on an
+                                Nginx instance. Check out <a
+                                    href="https://github.com/JLCarveth/portfolio-backend/blob/main/docs/deployment.md">
+                                    how I deployed this site on a DigitalOcean VM.</a></p>
+                            <a href="https://github.com/JLCarveth/portfolio-backend" class="special">Learn more</a>
                         </article>
                     </section>
                     <ul class="actions">
@@ -103,43 +113,31 @@
         <!-- Footer -->
         <section id="footer">
             <div class="inner">
+                <em id="successBanner" style="visibility: hidden;">
+                    Message Recieved. I will be in touch shortly.
+                </em>
                 <h2 class="major">Get in touch</h2>
-                <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce
-                    tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in
-                    tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-                <form method="post" action="#">
+                <form method="post" action="https://jlcarveth.dev/api/contact">
                     <div class="fields">
                         <div class="field">
                             <label for="name">Name</label>
-                            <input type="text" name="name" id="name" />
+                            <input type="text" name="nameInput" id="nameInput" />
                         </div>
                         <div class="field">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
+                            <input type="email" name="emailInput" id="emailInput" />
                         </div>
                         <div class="field">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"></textarea>
+                            <textarea name="messageInput" id="messageInput" rows="4"></textarea>
                         </div>
                     </div>
                     <ul class="actions">
                         <li><input type="submit" value="Send Message" /></li>
                     </ul>
                 </form>
-                <ul class="contact">
-                    <li class="icon solid fa-home">
-                        Untitled Inc<br />
-                        1234 Somewhere Road Suite #2894<br />
-                        Nashville, TN 00000-0000
-                    </li>
-                    <li class="icon solid fa-phone">(000) 000-0000</li>
-                    <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-                    <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-                    <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-                    <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-                </ul>
                 <ul class="copyright">
-                    <li>&copy; Untitled Inc. All rights reserved.</li>
+                    <li>&copy; John Carveth. All rights reserved.</li>
                     <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
@@ -154,6 +152,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/success.js"></script>
 
 </body>
 
