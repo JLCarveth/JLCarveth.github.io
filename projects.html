@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>John L. Carveth - Software Developer</title>
+    <meta name="author" content="John L. Carveth" />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- In-house Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <!-- FontAwesome Import-->
+    <script src="https://kit.fontawesome.com/6d487e4a51.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+    <!-- The site uses a basic CSS grid layout -->
+    <div class="grid-container">
+        <div class="header">
+            <h1 class="title">JLCarveth.<span style="color:green;">dev</span>
+            </h1>
+        </div>
+        <div class="sidebar">
+            <h5>Navigation</h5>
+            <ul class="nav">
+                <li><span class="fas fa-home my-2"></span>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li><span class="fas fa-phone my-2"></span>
+                    <a href="./contact.html">Contact Me</a>
+                </li>
+                <li><span class="fab fa-github-alt my-2"></span>
+                    <a href="https://github.com/JLCarveth">GitHub</a>
+                </li>
+                <li><span class="fas fa-project-diagram my-2"></span>
+                    <a href="./projects.html">Projects</a>
+                </li>
+                <li><span class="fas fa-user-lock my-2"></span>
+                    <a href="./privacy.html">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="row">
+                <div class="col-sm-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/meta.png" class="card-img-top" alt="This Site">
+                            <h5 class="card-title">This Website</h5>
+                            <p class="card-text">This project consists of both a frontend and a simple Node.js backend all hosted on an Nginx instance. Check out <a href="https://github.com/JLCarveth/portfolio-backend/blob/main/docs/deployment.md">how I deployed this site on a DigitalOcean VM.</a></p>
+                            <p class="card-text"><small class="text-muted">See
+                                    <a href="https://github.com/jlcarveth/portfolio-backend">this project on GitHub.</a></small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/chatclient.png" class="card-img-top" alt="Chat Client">
+                            <h5 class="card-title">Sockets</h5>
+                            <p class="card-text">This project contains some basic use cases of Web Sockets, including a
+                                multithreaded chat server and client.</p>
+                            <p class="card-text"><small class="text-muted">See
+                                    <a href="https://github.com/jlcarveth/sockets">this project on GitHub.</a></small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/deeper-merge.png" class="card-img-top" alt="Chat Client">
+                            <h5 class="card-title">deep-merge</h5>
+                            <p class="card-text">A simple npm library to recursively merge nested Javascript objects. I
+                                built this library for merging a default congfiguration object with an existing modified
+                                configuration file. This allows for new configuration fields to be added without
+                                affecting the current configuration. <a
+                                    href="https://www.npmjs.com/package/deeper-merge">This package is published on
+                                    npm.</a></p>
+                            <p class="card-text"><small class="text-muted">See
+                                    <a href="https://github.com/JLCarveth/deep-merge">this project on
+                                        GitHub.</a></small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/blogRefactor.png" class="card-img-top" alt="Chat Client">
+                            <h5 class="card-title">Node.js / Express.js Blog Backend System</h5>
+                            <p class="card-text">
+                                This was my first real project with Node.js and it was quite fun to program. This is an
+                                https api backend built for a blogging website. It includes several prominent features:
+                            <ul>
+                                <li><b>Role-Based access control:</b> Any https route can easily be set to require a
+                                    valid token issued to a user with the correct permissions. Roles can be set within
+                                    the config file, and each role can have many permissions.</li>
+                                <li><b>User Authentication:</b> Goes hand-in-hand with RBAC. Users can register, login,
+                                    and recieve tokens from the system. Tokens must then be supplied with future
+                                    requests to access sensitive https routes.</li>
+                                <li><b>EJS Support:</b> This backend service can also serve static html files to clients
+                                    using EJS templates.</li>
+                            </ul>
+                            </p>
+                            <p class="card-text"><small class="text-muted">See
+                                    <a href="https://github.com/JLCarveth/blogRefactor">this project on
+                                        GitHub.</a></small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/seeder.png" class="card-img-top" alt="Chat Client">
+                            <h5 class="card-title">good-mongoose-seeder</h5>
+                            <p class="card-text">
+                                A library to facilitate database seeding of a MongoDB database. Similar to deeper-merge,
+                                this library was built as existing options didn't meet my needs.<a
+                                    href="https://www.npmjs.com/package/good-mongoose-seeder">This package is published
+                                    on
+                                    npm.</a>
+                            </p>
+                            <p class="card-text"><small class="text-muted">See
+                                    <a href="https://github.com/JLCarveth/blogRefactor">this project on
+                                        GitHub.</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Import the Bootstrap JS libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

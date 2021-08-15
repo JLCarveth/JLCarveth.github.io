@@ -1,0 +1,92 @@
+/*
+Author: John L. Carveth <jlcarveth@gmail.com>
+Date:   2021-01-16
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Share+Tech+Mono&family=Source+Sans+Pro:wght@400;600&display=swap');
+body {
+    background-color: #011627;
+    color: #FDFFFC;
+    margin: 15px;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+a,
+a:hover {
+    color: #FF9F1C;
+    text-decoration: none;
+}
+
+ul.nav {
+    list-style-type: none;
+    display: contents;
+}
+
+h1,h2,h3,h4,h5,legend {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    color: #FDFFFC;
+}
+
+h1.title {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+li.list-group-item {
+    background-color: #011627;
+    border: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 10px;
+    grid-template-areas:
+               "header header  header"
+                "sidebar main main";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.hidden {
+    display: none;
+}
+
+.card, .popover {
+    background-color: #022441;
+    color: #FDFFFC;
+}
+
+
+.popover img {
+    border-radius: 5px;
+}
+
+/* Phone Portrait */
+@media (max-width: 630px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas: 
+                "header"
+                "sidebar"
+                "main";
+    }
+    .main {
+        max-width: 90vw;
+    }
+}
